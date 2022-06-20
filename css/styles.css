@@ -1,12 +1,35 @@
-:root{
-    --text-nav-color:#FFFFFF;
-    --gray-color:#2C3E50;
-    --green-section-one:#1ABC9C;
-}
-header{
-    
-}
-header a,li{
-   
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@400;700 & display=swap');
+
+:root {
+    --text-nav-color: #FFFFFF;
+    --gray-color: #2C3E50;
+    --green-section-one: #1ABC9C;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-container {
+    background-color: var(--gray-color);
+    height: 100px;
+    width: 100%;
+}
+
+.nav-main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0px auto;
+    border: yellow 1px solid;
+}
+
+.nav-main,
+a {
+    color: var(--text-nav-color);
+}
