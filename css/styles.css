@@ -1,3 +1,12 @@
-h1{
-    background-color: yellow;
+:root{
+    --text-nav-color:#FFFFFF;
+    --gray-color:#2C3E50;
+    --green-section-one:#1ABC9C;
 }
+header{
+    
+}
+header a,li{
+   
+}
+
