@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@400;700 & display=swap');
-
+/* Elments*/
 :root {
     --text-nav-color: #FFFFFF;
     --gray-color: #2C3E50;
@@ -15,19 +15,30 @@ html body {
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+footer{
+    height: 120px;
+    background-color: var(--gray-color);
+    display: flex;
+    align-items: center;
+   
+    
+    
+    
+}
 
+/* CLASSES, IDS */
 .nav-container {
     background-color: var(--gray-color);
     height: 100px;
     width: 100%;
     padding: 20px;
+    position: fixed;/*mantém a nav fixa no topo*/
 }
 
 .nav-main {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,4 +64,57 @@ html body {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px;
+}
+.profile-container{
+    background-color: var(--green-section-one);
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 160px 0 60px 0;
+    color: var(--text-nav-color);
+}
+.profile-avatar img{
+    width: 150px;
+}
+.profile-title{
+   margin: 37px 0 0 0;
+   font-size: 2rem;    /* 1 rem(medida relativa ao root) é igual a 16px */
+}
+.profile-description{
+   margin: 0;
+   font-size: 1rem;
+}
+#portfolio{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.portifolio-title{
+    font-size: 2rem;
+    text-decoration:uppercase; /* letras maiusculas*/
+    text-align: center;
+    color: #2C3E50;
+    margin: 60px 0 10px 0;
+}
+.portifolio-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+    width: calc(100% - 40px); /* 100% da tela - os 40 px das bordas */
+    max-width: 420px;
+    border-radius: 10px;
+    cursor: pointer; /* ao passar o mouse em cima da imagem o ponteiro se transforma em mouse*/
+    margin: 20px;
+}
+.footer-text{
+    color: var(--text-nav-color);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+.footer-img{
+    margin: 13px 20px;
+    size: 32px;
+    
 }
